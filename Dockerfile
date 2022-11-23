@@ -1,4 +1,4 @@
-FROM zhuzhu/gradle-jdk8-alpine
+FROM gradle:7.5.1-jdk11-alpine
 COPY . .
 RUN gradle build
 EXPOSE 8080
