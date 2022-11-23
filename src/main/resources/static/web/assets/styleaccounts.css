@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color:white;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: #38ef7d;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  ;
+  padding: 1rem;
+
+  margin-right: 5px;
+}
+
+.hover:hover{
+  background-color:rgb(23, 23, 144);
+     color: white;
+   }
+#active{
+  background-color:rgb(23, 23, 144);
+  color: white;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(23, 23, 144);
+  border-radius: 10px;
+
+}
+
+@media (max-width: 800px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .toggle-button {
+      display: flex;
+  }
+
+  .navbar-links {
+      display: none;
+      width: 100%;
+  }
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      text-align: center;
+  }
+
+  .navbar-links ul li a {
+      padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+  .navbar-links li:hover {
+    background-color:wheat;
+    color: white;
+  }
+}
+
+
+main{
+    min-height: 100vh;
+    background-color: #0DFBFF;
+    background-image: url(./city-6220689_960_720.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Quicksand";
+    color: black;
+}
+#loans{
+  color: white;
+}
+#tabla{
+  background-color:whitesmoke;
+  min-height: 50vh;
+  min-width: 60vw;
+}
+.btn-outline-info {
+  --bs-btn-color: #000000;
+  --bs-btn-border-color:  rgb(23, 23, 144);
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: rgb(23, 23, 144);
+  --bs-btn-hover-border-color: rgb(23, 23, 144);
+  --bs-btn-focus-shadow-rgb: 13,202,240;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg:  rgb(23, 23, 144);
+  --bs-btn-active-border-color:  rgb(23, 23, 144);
+  --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color:  rgb(23, 23, 144);
+
+  --bs-btn-disabled-border-color:  rgb(23, 23, 144);
+  --bs-gradient: none;
+}
+.table{
+  border: 1px;
+  max-width: 60vw;
+}
+footer{
+    background-color:red !important;
+}
+.card {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  border: none;
+  position: relative;
+  margin-bottom: 30px;
+  box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,0.1), 0 0.9375rem 1.40625rem rgba(90,97,105,0.1), 0 0.25rem 0.53125rem rgba(90,97,105,0.12), 0 0.125rem 0.1875rem rgba(90,97,105,0.1);
+}
+.l-bg-cherry {
+  background: linear-gradient(to right, #493240, #f09) !important;
+  color: #fff;
+}
+
+.l-bg-blue-dark {
+  background: linear-gradient(to right, #373b44, #4286f4) !important;
+  color: #fff;
+}
+
+.l-bg-green-dark {
+  background: linear-gradient(to right, #0a504a, #38ef7d) !important;
+  color: #fff;
+}
+
+.l-bg-orange-dark {
+  background: linear-gradient(to right, #a86008, #ffba56) !important;
+  color: #fff;
+}
+
+.card .card-statistic-3 .card-icon-large .fas, .card .card-statistic-3 .card-icon-large .far, .card .card-statistic-3 .card-icon-large .fab, .card .card-statistic-3 .card-icon-large .fal {
+  font-size: 110px;
+}
+
+.card .card-statistic-3 .card-icon {
+  text-align: center;
+  line-height: 50px;
+  margin-left: 15px;
+  color: #000;
+  position: absolute;
+  right: -5px;
+  top: 20px;
+  opacity: 0.1;
+}
+
+.l-bg-cyan {
+  background: linear-gradient(135deg, #289cf5, #84c0ec) !important;
+  color: #fff;
+}
+
+.l-bg-green {
+  background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%) !important;
+  color: #fff;
+}
+
+.l-bg-orange {
+  background: linear-gradient(to right, #f9900e, #ffba56) !important;
+  color: #fff;
+}
+
+.l-bg-cyan {
+  background: linear-gradient(135deg, #289cf5, #84c0ec) !important;
+  color: #fff;
+}
+.center{
+display: flex;
+}

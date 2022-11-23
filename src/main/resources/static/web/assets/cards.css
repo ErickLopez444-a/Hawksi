@@ -1,0 +1,470 @@
+*{
+    box-sizing:border-box;
+    
+      box-sizing:border-box;
+    
+  }
+  
+  body, html{
+    margin:0;
+    padding:0;
+  
+  }
+  body{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    box-sizing: border-box;
+    
+  }
+  main{
+    background-color: #0DFBFF;
+background-image: url(./henry-chen-ZwRCXGkv30w-unsplash.jpeg); 
+background-size: cover;
+    min-height: 76.9vh;
+
+  }
+#title{
+  color: white;
+}
+  
+   .tusTarjetas{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+   }
+   a{
+     text-decoration: none;
+   }
+   @padding-large-vertical: 10px;
+   @padding-base-vertical: 6px;
+   @font-size-h3: 24px;
+   
+
+  
+  .tarjeta{
+  width: 200px;
+  height: 135px;
+    -webkit-perspective: 300px;
+    -moz-perspective: 300px;
+    perspective:300px;
+    margin: 1rem;
+  }
+  
+  .tarjeta__part{
+    box-shadow: 1px 1px #aaa3a3;
+      top: 0;
+    position: absolute;
+  z-index: 1000;
+    left: 0;
+    display: inline-block;
+      width: 200px;
+      height: 135px;
+      background-color: goldenrod;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 8px;
+     
+      -webkit-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -moz-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -ms-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -o-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+  }
+  
+  .tarjeta__front{
+    padding: 9px;
+  transform: rotateY(0);
+  transform: rotateY(0);
+  margin-bottom: 2rem;
+  }
+  
+  .tarjeta__back {
+    padding: 9px 0;
+  transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  }
+  
+  .tarjeta__black-line {
+      margin-top: 2.5px;
+      height: 19px;
+      background-color: #303030;
+  }
+  
+  .tarjeta__front-logo{
+        position: absolute;
+      top: 9px;
+      right: 9px; 
+      transform: scale(2);
+      
+  }
+  .tarjeta__square {
+      border-radius: 2.5px;
+      height: 15px;
+  }
+  
+  .tarjeta_numer {
+      display: block;
+      width: 100%;
+      word-spacing: 2px;
+      font-size: 10px;
+      letter-spacing: 1px;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-top: 10px;
+  }
+  
+  .tarjeta__label {
+      font-size: 5px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.8);
+      letter-spacing: 1px;
+  }
+  
+  .tarjeta__info {
+      margin-bottom: 0;
+      margin-top: 0;
+      font-size: 8px;
+      line-height: 4.5px;
+      color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .tarjeta__space{
+    margin-top: 0;
+    padding: 0;
+  }
+  
+  .tarjeta__back-content {
+      padding: 7.5px 7.5px 0;
+  }
+  .tarjeta__secret--last {
+      color: #303030;
+      text-align: right;
+      margin: 0;
+      font-size: 7px;
+  }
+  
+  .tarjeta__secret {
+      padding: 2.5px 6px;
+      background-color: #fff;
+      position:relative;
+  }
+  
+  .tarjeta__secret:before{
+    content:'';
+    position: absolute;
+  top: -1.5px;
+  left: -1.5px;
+  height: calc(100% + 3px);
+  width: calc(100% - 21px);
+  border-radius: 2px;
+    background: repeating-linear-gradient(45deg, #ededed, #ededed 5px, #f9f9f9 5px, #f9f9f9 10px);
+  }
+  
+  .tarjeta__back-logo {
+      position: absolute;
+      bottom: 7.5px;
+      right: 7.5px;
+  }
+  
+  .tarjeta__back-square {
+      position: absolute;
+      bottom: 7.5px;
+      left: 7.5px;
+  }
+  
+  .tarjeta:hover .tarjeta__front {
+      transform: rotateY(180deg);
+      transform: rotateY(180deg);
+  }
+  
+  .tarjeta:hover .tarjeta__back {
+      transform: rotateY(0deg);
+      transform: rotateY(0deg);
+  }
+  .cardtype{
+    color: white;
+  }
+
+  
+
+  
+
+  @media (min-width: 576px) { 
+
+    .tarjeta{
+      width: 340px;
+      height: 225px;
+        perspective: 600px;
+        perspective: 600px;
+        perspective:600px;
+        
+      }
+  
+      .tarjeta__part{
+        box-shadow: 1px 1px #aaa3a3;
+          top: 0;
+        position: absolute;
+      z-index: 1000;
+        left: 0;
+        display: inline-block;
+          width: 340px;
+          height: 225px;
+          background-color: goldenrod;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          border-radius: 8px;
+          -webkit-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          -moz-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          -ms-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          -o-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          -webkit-transform-style: preserve-3d;
+          -moz-transform-style: preserve-3d;
+          -webkit-backface-visibility: hidden;
+          -moz-backface-visibility: hidden;
+      }
+  
+      .tarjeta__front{
+        padding: 18px;
+      transform: rotateY(0);
+      transform: rotateY(0);
+      
+      }
+  
+      .tarjeta__back {
+        padding: 18px 0;
+      transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+      }
+    
+  
+      .tarjeta__black-line {
+        margin-top: 5px;
+        height: 38px;
+        background-color: #303030;
+    }
+  
+    .tarjeta__logo {
+      height: 16px;
+    }
+  
+    .tarjeta__front-logo{
+      position: absolute;
+      top: 18px;
+      right: 18px; 
+      transform: scale(3);
+    }
+  
+    .tarjeta__square {
+      border-radius: 5px;
+      height: 30px;
+    }
+  
+    .tarjeta_numer {
+      display: block;
+      width: 100%;
+      word-spacing: 4px;
+      font-size: 20px;
+      letter-spacing: 2px;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  
+    .tarjeta__label {
+      font-size: 10px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.8);
+      letter-spacing: 1px;
+    }
+  
+    .tarjeta__info {
+      margin-bottom: 0;
+      margin-top: 5px;
+      font-size: 16px;
+      line-height: 18px;
+      color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    }
+  
+    .tarjeta__back-content {
+      padding: 15px 15px 0;
+    }
+  
+    .tarjeta__secret--last {
+      color: #303030;
+      text-align: right;
+      margin: 0;
+      font-size: 14px;
+    }
+  
+    .tarjeta__secret {
+      padding: 5px 12px;
+      background-color: #fff;
+      position:relative;
+    }
+  
+    .tarjeta__secret:before{
+      content:'';
+      position: absolute;
+    top: -3px;
+    left: -3px;
+    height: calc(100% + 6px);
+    width: calc(100% - 42px);
+    border-radius: 4px;
+      background: repeating-linear-gradient(45deg, #ededed, #ededed 5px, #f9f9f9 5px, #f9f9f9 10px);
+    }
+  
+    .tarjeta__back-logo {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+    }
+    .tarjeta__back-square {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+    }
+    .divtarjeta{
+      
+      margin-left: 5rem;
+      margin-right: 5rem;
+      padding-bottom: 2rem;
+    }
+    .tusTarjetas{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  
+  
+  
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+    color:black;
+  }
+  
+  .brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+  }
+  
+  .navbar-links {
+    height: 100%;
+  }
+  
+  .navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    color: #38ef7d;
+  }
+  
+  .navbar-links li {
+    list-style: none;
+  }
+  
+  .navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+  
+    margin-right: 5px;
+  }
+  
+
+  .hover:hover{
+ background-color:rgb(23, 23, 144);
+    color: white;
+  }
+  #active{
+    background-color:rgb(23, 23, 144);
+    color: white;
+  }
+  .boton{
+    background-color: rgb(23, 23, 144);
+    color: white;
+  }
+  .whitea{
+    color: white;
+  }
+  .toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(23, 23, 144);
+    border-radius: 10px;
+  
+  }
+  
+  @media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .toggle-button {
+        display: flex;
+    }
+  
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+  
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+  
+    .navbar-links ul li {
+        text-align: center;
+    }
+  
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+  
+    .navbar-links.active {
+        display: flex;
+    }
+  }

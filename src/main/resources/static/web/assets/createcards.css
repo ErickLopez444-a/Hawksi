@@ -1,0 +1,376 @@
+
+ *{
+  box-sizing:border-box;
+  
+    box-sizing:border-box;
+    font-family: "Quicksand";
+  
+}
+
+body, html{
+  margin:0;
+  padding:0;
+
+}
+body{
+  display: flex; 
+  flex-direction: column;
+  box-sizing: border-box;
+   
+  background-repeat: no-repeat;
+  height: 100vh !important;
+  
+}
+main{
+  min-height: max-content;
+  background-image: url(./henry-chen-ZwRCXGkv30w-unsplash.jpeg); 
+  background-size: cover;
+  min-height: 80vh;
+  font-family: "Quicksand";
+
+}
+/* HEADER */
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color:white;
+  color:black;
+}
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: #38ef7d;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+
+  margin-right: 5px;
+}
+
+.hover:hover{
+  background-color:rgb(23, 23, 144);
+     color: white;
+   }
+#active{
+  background-color:rgb(23, 23, 144);
+  color: white;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(23, 23, 144);
+  border-radius: 10px;
+
+}
+
+@media (max-width: 800px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .toggle-button {
+      display: flex;
+  }
+
+  .navbar-links {
+      display: none;
+      width: 100%;
+  }
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      text-align: center;
+  }
+
+  .navbar-links ul li a {
+      padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+}
+
+.contenedor{
+  height: 70vh !important;
+   width:  100%;
+
+  
+}
+
+
+.checkbox{
+ margin: 20px 10px 20px 0;
+}
+.submit_btn{
+ width:85%;
+ padding: 10px 30px;
+ cursor: pointer;
+ display: block;
+ margin: auto;
+ background:black;
+ border: 0;
+ outline: none;
+ color: white;
+margin-top: 20px;
+}
+.input_field{
+ width: 100%;
+ padding: 10px 0;
+ margin: 5px 0;
+ border-left: 0;
+ border-top: 0;
+ border-right: 0;
+ outline: none;
+ background: transparent;
+}
+.input_group{
+ top:80px;
+ position: absolute;
+ transition: .5s;
+ padding-left: 30px;
+}
+.form_box{
+ width: 300px;
+ height: 480px;
+
+ position: relative;
+
+ overflow: hidden;
+}
+
+@media (min-width: 768px) { 
+ .container{
+   padding-top: 5rem;
+   padding-left: 31%;
+}
+.form_box{
+ width: 550px;
+ height: 480px;
+ position: relative;
+ background-color:whitesmoke;
+ padding: 5px; 
+ overflow: hidden;
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+}
+
+
+#loans{
+  color: white;
+}
+
+
+main{
+ background-image: url(./henry-chen-ZwRCXGkv30w-unsplash.jpeg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ overflow: hidden;
+}
+.form-holder {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     min-height: 100vh;
+}
+
+.form-holder .form-content {
+   position: relative;
+   text-align: center;
+   display: -webkit-box;
+   display: -moz-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-align-items: center;
+   align-items: center;
+   padding: 10px;
+   background-color:rgb(23, 23, 144);
+}
+
+.form-content .form-items {
+   border: 3px solid #fff;
+   padding: 40px;
+   display: inline-block;
+   width: 100%;
+   min-width: 540px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   border-radius: 10px;
+   text-align: left;
+   -webkit-transition: all 0.4s ease;
+   transition: all 0.4s ease;
+}
+
+.form-content h3 {
+   color: #fff;
+   text-align: left;
+   font-size: 28px;
+   font-weight: 600;
+   margin-bottom: 5px;
+}
+
+.form-content h3.form-title {
+   margin-bottom: 30px;
+}
+
+.form-content p {
+   color: #fff;
+   text-align: left;
+   font-size: 17px;
+   font-weight: 300;
+   line-height: 20px;
+   margin-bottom: 30px;
+}
+
+
+.form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
+   color: #fff;
+}
+
+.form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content select {
+   width: 100%;
+   padding: 9px 20px;
+   text-align: left;
+   border: 0;
+   outline: 0;
+   border-radius: 6px;
+   background-color: #fff;
+   font-size: 15px;
+   font-weight: 300;
+   color: #8D8D8D;
+   -webkit-transition: all 0.3s ease;
+   transition: all 0.3s ease;
+   margin-top: 16px;
+}
+
+
+
+
+
+.form-content textarea {
+   position: static !important;
+   width: 100%;
+   padding: 8px 20px;
+   border-radius: 6px;
+   text-align: left;
+   background-color: #fff;
+   border: 0;
+   font-size: 15px;
+   font-weight: 300;
+   color: #8D8D8D;
+   outline: none;
+   resize: none;
+   height: 120px;
+   -webkit-transition: none;
+   transition: none;
+   margin-bottom: 14px;
+}
+
+.form-content textarea:hover, .form-content textarea:focus {
+   border: 0;
+   background-color: #ebeff8;
+   color: #8D8D8D;
+}
+
+.mv-up{
+   margin-top: -9px !important;
+   margin-bottom: 8px !important;
+}
+@media screen and (max-width:500px) {
+
+  .form-content .form-items{
+      min-width: 200px;
+      
+  }
+  
+  
+}
+@media only screen and (max-width: 760px), (min-width: 768px) and (max-width: 1024px) {
+  /* ... */
+  select {
+      width: 150px;
+  }
+}
+main{
+  font-family: "Quicksand";
+  min-height: 90vh;
+}
+footer{
+  min-height: 20vh !important;
+}
